@@ -1,0 +1,9 @@
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\PorteMonaie\bin\Debug\PorteMonaie.exe.config
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\PorteMonaie\bin\Debug\PorteMonaie.exe
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\PorteMonaie\bin\Debug\PorteMonaie.pdb
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\PorteMonaie\obj\Debug\PorteMonaie.csprojResolveAssemblyReference.cache
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\PorteMonaie\obj\Debug\PorteMonaie.csproj.GenerateResource.Cache
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\PorteMonaie\obj\Debug\PorteMonaie.exe
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\PorteMonaie\obj\Debug\PorteMonaie.pdb
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\PorteMonaie\obj\Debug\MainForm.Form1.resources
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\PorteMonaie\obj\Debug\MainForm.Properties.Resources.resources

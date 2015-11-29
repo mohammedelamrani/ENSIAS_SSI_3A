@@ -1,0 +1,8 @@
+.\bin\Debug\sm mifare lib windows.exe
+.\bin\Debug\sm mifare lib windows.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\MainForm.Form1.resources
+obj\Debug\sm_mifare_lib_windows.Properties.Resources.resources
+obj\Debug\sm mifare lib windows.csproj.GenerateResource.Cache
+obj\Debug\sm mifare lib windows.exe
+obj\Debug\sm mifare lib windows.pdb

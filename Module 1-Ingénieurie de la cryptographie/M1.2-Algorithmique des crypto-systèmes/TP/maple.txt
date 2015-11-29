@@ -1,0 +1,282 @@
+lpi:=proc(n)
+local i,S;
+if n<2 then
+return( "Try n>1");
+else
+S[]:=0;
+for i from 2 to n do
+if isprime(i) then
+S:=[op(S),i];
+end if;
+end do;
+end if;
+return S;
+end proc:
+
+compose:=proc(L,b)
+
+local k,n;
+k:=nops(L);
+n=0;
+for i from 0 to k-1 do
+
+ n=n*b+L[i+1];
+end for
+return n;
+end
+
+llt:=proc(a,b)
+
+local L:=[],i,A,B,j;
+
+for i from a to b do:
+
+	p:=nextprime(i);
+	if p <= b then
+		A:=4;
+		B:=power(2,p)-1
+		for j from 1 to p-2 do:
+			A:=(power(A,2)-2) mod B;
+		end do;
+		if A == 0 then 
+			L:=[op(L),p]
+		end if;
+	end if;
+end do;
+return L;
+end proc:
+
+
+
+
+monorder:=proc(a,n)
+local 
+b:=a;
+i=1;
+while b!= do:
+	i:=i+1;
+	b=a*b mod n;
+end do;
+return i;
+end proc:
+
+
+
+myorder:=proc(a, n)
+local i,w,b,p,v,fn,k;
+if gcd(a,n)<>1 then
+return(not coprime);
+fi;
+w:=phi(n);
+fn:=ifactors(w)[2];
+k:=nops(fn);
+for i from 1 to k do
+p:=fn[i][1];
+v:=fn[i][2];
+w:=w/p^v;
+b:=Power(a,w) mod n;
+while b<>1 do
+b:=Power(b,p) mod n;
+w:=w*p;
+od;
+od;
+return(w);
+end proc:
+
+
+
+
+
+mult:proc(LA,LB,b):
+local i,B;
+
+B:=compose(LB,b);
+
+RET:=LA;
+
+for i from 1 to B do:
+	RET:=addition(RET,LA,b);
+end do;
+return RET;
+end proc:
+
+***********************
+mult := proc (LA, LB, b) 
+	local i, j, k, c, LAB, rprd, lb, la, prd, r;
+ 		lb := nops(LB);
+ 		la := nops(LA); 
+ 		LAB := [];
+		c := [];
+ 		for i from 0 to lb do
+ 			rprd := 0;
+ 			for j from 0 to la do
+				l:=lb-i;
+ 				prd := LB[l]*LA[j]+rprd;
+ 				r := `mod`(prd, b);
+ 				c := [op(c), r];
+ 				rprd := iquo(prd, b);
+ 				for k to i do 
+ 					c := [op(c), 0];
+ 				end do;
+ 			end do; 
+ 			LAB := addition(LAB, c, b);
+ 		 end do;
+		 return LAB;
+end proc:
+// *****************************************************************
+
+exercice fermat 250
+L := [];
+ p := nextprime(250);
+ for i to p-1 do 
+b := `mod`(power(i, p-1), p);
+ L := [op(L), b] end 
+do:L
+****
+pour les sequences: 
+T := [seq(`mod`(power(i, p-1), p), i = 1 .. p-1)]; T
+
+
+**************************
+Fermattest:=proc(n,k)
+local i,a,b;
+if n mod 2=0 then
+return(n is composite);
+else
+i:=1;
+while i<=k do
+a:=rand(2..n-1)();
+if gcd(a,n)<>1 then
+return(n is composite);
+fi;
+b:=a&^(n-1) mod n;
+if b<>1 then
+return(n is composite);
+fi;
+i:=i+1;
+od;
+return(n is probably prime);
+fi;
+end proc:
+
+
+
+llt:=proc(a,b)
+ local i,j,L;
+ L:={};
+ for i from a to b do:
+	p:=nextprime(i);
+	if p <= b then 
+		A:=4;
+		B:=2^p -1;
+		for j from 1 to p-2 do:
+			A:=A^2 mod B;
+		od;
+		if A=0 then 
+			L:=L union {p};
+		fi;
+	fi;
+ od;
+ return L;
+ end proc:
+
+
+
+
+n:=100:Digits:=100:with(numtheory)
+x:=rand(2^(n/2-1)..2^(n/2))():
+p:=nextprime(x):
+y:=rand(round(x/2)..x)():
+q:= nextprime(y):
+evalf(p/q):
+N:=p*q:
+ph:=(p-1)*(q-1):
+sn:=trunc(1/3*(N^(1/4))):
+d:=rand(sn)():
+while gcd(d,ph)>1 do
+d:=rand(sn)() end do:
+e:=1/d mod ph:
+convert(e/N,confrac,'pq' ):
+g:=1:i:=2:
+while g=1 do
+y:=denom(pq[i]):
+x:=numer(pq[i]):
+psi:=(e*y-1)/x:
+delta:=(N+1-psi)^2-4*N:
+p2:=((N+1-psi)+sqrt(delta))/2:
+p2:=round(p2):
+g:=gcd(p2,N):
+i:=i+1:
+od:
+print(`d=`):y;
+print(`p=`):p;
+print(`q=`):N/p2;
+
+
+224375173688264526144666036424948623079576670665637455072683395238423813930600575959223815665101844253759940638506835370769042559805072342417052449670299486336368838779427516351438633592282521009236391732691155753655982895991091585294870507165149667359474794369111631899495396842970001999921507652344
+
+
+
+
+
+
+
+fact:=proc(N)
+local ;
+ x:=trunc(2*sqrt(N));
+ y:=sqrt(x^2-4*N);
+ while y <> trunc(y) do 
+	x:=x+1;
+	y:=sqrt(x^2-4*N);
+ end do;
+ p:=(x+y)/2;
+ q:=(x-y)/2;
+ return p , q ;
+end proc:
+
+
+
+
+
+
+
+pseudo_premier_fort:=proc(x,y,a)   n entre x et y
+local r,m,i,L,n;
+L:=[];
+
+
+for n from x to y do:
+	m:=n-1;r:=0;
+	while type(m,even) do
+	m:=iquo(m,2):r:=r+1:
+	end do:
+	if modp(power(a,m),n)=1 then 
+	        L:=[op(L),n];
+		//RETURN(n, "est pseudo premier fort en", a);
+	fi;
+	for i from 0 to r-1 do
+		if a&^(2^i*m) mod n=n-1 then
+			//RETURN(n, "est pseudo premier fort en", a);
+			L:=[op(L),n];
+		fi;
+	od;
+
+od;
+return L;
+end proc:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

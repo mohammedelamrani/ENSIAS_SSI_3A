@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Worksheet><Version major="6" minor="1"/><View-Properties><Zoom percentage="100"/></View-Properties><Styles><Layout alignment="left" bullet="none" name="Warning"/><Layout alignment="left" bullet="none" firstindent="0.0" leftmargin="0.0" linebreak="space" linespacing="0.0" name="Normal" rightmargin="0.0" spaceabove="0.0" spacebelow="0.0"/><Layout alignment="centred" bullet="none" linespacing="0.5" name="Maple Output"/><Font background="[0,0,0]" bold="true" executable="true" family="Monospaced" foreground="[255,0,0]" name="Maple Input" opaque="false" size="12"/><Font background="[0,0,0]" family="Monospaced" foreground="[0,0,255]" name="Warning" opaque="false" readonly="true" size="12"/><Font background="[0,0,0]" family="Times New Roman" foreground="[0,0,255]" name="2D Output" opaque="false" readonly="true" size="12"/></Styles><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">sol_SC := proc (S,m)
+local n,x,r,i;
+n := nops(m);
+x := [seq(0, i = 1 .. n)];
+r := S; 
+i := n;
+while  i &gt;= 1 do
+if r &gt;= m[i] then
+x[i] := 1;
+r := r-m[i];
+else x[i] := 0;
+end if;
+i := i-1;
+end do;
+return x;
+end proc:</Text-field></Input></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">a:={3, 7, 17, 35, 85, 200};
+S:=a[1]+a[2]+a[3]+a[6];</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJhRzYiPCgiIiQiIigiIzwiI04iIyYpIiQrIw==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJTRzYiIiRGIw==</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">sol_SC(S,a);</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiM3KCIiIkYkRiQiIiFGJUYk</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">with(numtheory);
+#G_en_eration des cl_es :
+r := [3, 7, 17, 35, 85, 200];
+n := nops(r);
+z := 0:
+for i from 1 to n do
+z := z+r[i];
+end do;
+B := (rand(z .. 2*z))();
+A:=B;
+while gcd(A,B)&gt;1 do
+A:=rand(2..B-1)();
+end do;
+e:=[seq(A*r[i] mod B,i=1..n)];
+</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiM3UUkmR0lnY2RHNiJJKWJpZ29tZWdhR0YlSSZjZnJhY0dGJUkpY2ZyYWNwb2xHRiVJK2N5Y2xvdG9taWNHRiVJKWRpdmlzb3JzR0YlSSlmYWN0b3JFUUdGJUkqZmFjdG9yc2V0R0YlSSdmZXJtYXRHRiVJKWltYWd1bml0R0YlSSZpbmRleEc2JEkqcHJvdGVjdGVkR0YxSShfc3lzbGliR0YlSS9pbnRlZ3JhbF9iYXNpc0dGJUkpaW52Y2ZyYWNHRiVJJ2ludnBoaUdGJUkqaXNzcXJmcmVlR0YlSSdqYWNvYmlHRiVJKmtyb25lY2tlckdGJUknbGFtYmRhR0YlSSlsZWdlbmRyZUdGJUkpbWNvbWJpbmVHRiVJKW1lcnNlbm5lR0YlSShtaWdjZGV4R0YlSSptaW5rb3dza2lHRiVJKG1pcG9seXNHRiVJJW1sb2dHRiVJJ21vYml1c0dGJUkmbXJvb3RHRiVJJm1zcXJ0R0YlSSluZWFyZXN0cEdGJUkqbnRoY29udmVyR0YlSSludGhkZW5vbUdGJUkpbnRobnVtZXJHRiVJJ250aHBvd0dGJUkmb3JkZXJHRjFJKXBkZXhwYW5kR0YlSSRwaGlHRiVJI3BpR0YlSSpwcHJpbXJvb3RHRiVJKXByaW1yb290R0YlSShxdWFkcmVzR0YlSStyb290c3VuaXR5R0YlSSpzYWZlcHJpbWVHRiVJJnNpZ21hR0YlSSpzcTJmYWN0b3JHRiVJKHN1bTJzcXJHRiVJJHRhdUdGJUkldGh1ZUdGJQ==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJyRzYiNygiIiQiIigiIzwiI04iIyYpIiQrIw==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJuRzYiIiIn</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJ6RzYiIiIk</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJ6RzYiIiM1</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJ6RzYiIiNG</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJ6RzYiIiNp</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJ6RzYiIiRaIg==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJ6RzYiIiRaJA==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJCRzYiIiRsJg==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJBRzYiIiRsJg==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJBRzYiIiQmUg==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJBRzYiIiRRJA==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJlRzYiNygiJFwlIiQxIiIjJyoiJEkmIiQhWyIkbCQ=</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">generation_cles := proc(r)
+local n,z,i,B,A,e;
+n := nops(r);
+z := 0:
+for i from 1 to n do
+z := z+r[i];
+end do;
+B := (rand(z .. 2*z))();
+A:=B;
+while gcd(A,B)&gt;1 do
+A:=rand(2..B-1)();
+end do;
+e:=[seq(A*r[i] mod B,i=1..n)];
+return(B,A,r, e);
+end proc:
+</Text-field></Input><Input><Text-field prompt="&gt; " style="Maple Input"/></Input><Input><Text-field prompt="&gt; " style="Maple Input"/></Input></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">r := [3, 7, 17, 35, 85, 200];</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJyRzYiNygiIiQiIigiIzwiI04iIyYpIiQrIw==</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input"/></Input></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">generation_cles(r);</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiYiJE8nIiRYJjcoIiIkIiIoIiM8IiNOIiMmKSIkKyM3KCIkaiQiJE4nIiRoJCIkSiciJEwmIiRXIw==</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input"># Chiffrement du message	
+M:=45;
+n:=nops(e);
+a2:=[seq(2^i, i = 0 .. n-1)];
+X :=sol_SC(M,a2);
+S := 0;
+for i from 1 to n do
+S := S+X[i]*e[i];
+end do;</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJNRzYiIiNY</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJuRzYiIiIn</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSNhMkc2IjcoIiIiIiIjIiIlIiIpIiM7IiNL</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJYRzYiNygiIiIiIiFGJ0YnRihGJw==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJTRzYiIiIh</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJTRzYiIiRcJQ==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJTRzYiIiRcJQ==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJTRzYiIiRYJg==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJTRzYiIiV2NQ==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJTRzYiIiV2NQ==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJTRzYiIiVTOQ==</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">chiffrer_message :=proc(M,e)
+local n,a2,X,S,i;
+n:=nops(e);
+a2:=[seq(2^i, i = 0 .. n-1)];
+X :=sol_SC(M,a2);
+S := 0;
+for i from 1 to n do
+S := S+X[i]*e[i];
+end do;
+return(S);
+end proc:</Text-field></Input><Input><Text-field prompt="&gt; " style="Maple Input"/></Input></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">M=45;</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiMvIiNYRiQ=</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">chiffrer_message(M,e);</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiMiJVM5</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input"># Dechiffrement du cryptogramme :
+S1:=(S*modp(1/A, B)) mod B;
+X1 := sol_SC(S1,a);
+M1 := 0:
+for i from 0 to n-1 do
+M1 := M1+X1[i+1]*2^i
+end do:
+M1-M;</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSNTMUc2IiIkYiM=</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSNYMUc2IjcoIiIiIiIhRidGJ0YoRic=</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiMiIiE=</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">dechiffrer_cryptogramme := proc(S,A,B,a)
+local S1,X1,M,i;
+S1:=(S*modp(1/A, B)) mod B;
+X1 := sol_SC(S2,a);
+M := 0:
+for i from 0 to n-1 do
+M := M+X1[i+1]*2^i
+end do:
+return(M);
+end proc:
+</Text-field></Input></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">dechiffrer_cryptogramme(S,A,B,a);</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiMiI1g=</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">#produit scalaire
+prod_scal:= proc (x, y)
+add(x[i]*y[i], i = 1 .. nops(x));
+end proc:
+</Text-field></Input></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">u := [1, 45, 8, -36]; v := [49, 8, -5, 4];
+prod_scal(u, v);</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJ1RzYiNyYiIiIiI1giIikhI08=</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJ2RzYiNyYiI1wiIikhIiYiIiU=</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiMiJEQj</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">#obtenir une base orthogonale par la m&#19;ethode de Gram-Schmidt:
+gramschmidt:=proc (M)
+local i, j, n, B, P, u,k:
+with(LinearAlgebra):
+n := nops(M):
+B := []: P := []:
+for i from 1 to n do
+u := [seq(0, k = 1 .. n)]:
+for j from 1 to i-1 do
+u[j]:=prod_scal(M[i],B[j])/prod_scal(B[j],B[j]):
+end do:
+u[i] := 1:
+P := [op(P), u]:
+B:=[op(B),[seq(M[i][k]-add(u[j]*B[j][k],
+j = 1 .. i-1), k = 1 .. n)]]:
+end do:
+return(B, P):
+end proc:
+
+
+</Text-field></Input></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">with(linalg):
+</Text-field></Input><Output><Text-field layout="Warning" style="Warning">Warning, the name GramSchmidt has been rebound</Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">M:=[[4,6,-1,2],[7,-7,2,-1],[9,2,-1,0],[4,3,-1,-3]];
+</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJNRzYiNyY3JiIiJSIiJyEiIiIiIzcmIiIoISIoRitGKjcmIiIqRitGKiIiITcmRigiIiRGKiEiJA==</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">gramschmidt(M);</Text-field></Input><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the name GramSchmidt has been rebound</Text-field></Output><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiQ3JjcmIiIlIiInISIiIiIjNyYjIiRkIiIjPiMhIygqRiwjIiNLRiwjISIoRiw3JiMiJUM5IiVaYiMiJEAjIiVcPSMhJXduRjYjISVEIylGNjcmIyIkIUgiJmYvIiMiJURsRkEjIiZnYyJGQSMhJkRCIkZBNyY3JiIiIiIiIUZLRks3JiMhIidGLEZKRktGSzcmIyIjXCIjZCMiJSg9IkY5RkpGSzcmIyIjSEZSIyIkRSRGOSMiJm8mPkZBRko=</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">#verifier la condition |U(i,j)|&lt;1/2
+
+cond_1 :=proc(M)
+local i,j,k,U,N;
+N:=M;
+U:=gramschmidt(M)[2];
+for i from 2 to nops(M) do
+for j from i-1 by -1 to 1 do
+N[i] := N[i]-round(U[i][j])*N[j];
+for k from 1 to j do
+U[i][k]:=U[i][k]-round(U[i][j])*U[j][k]
+end do
+end do
+end do:
+return N:
+end proc:</Text-field></Input></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">#verifier la condition de Lovasz 
+lovasz:=proc(M)
+local i,n,G;
+n:=nops(M);
+G:=gramschmidt(M);
+for i to n-1 do
+if evalb(prod_scal(G[1][i+1],G[1][i+1])
+&lt;(3/4-G[2][i+1][i]^2)*prod_scal(G[1][i],G[1][i]))
+then return [false, i]
+end if:
+end do:
+return [true, 0]:
+end proc:</Text-field></Input></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input"><Font encoding="ISO8859-1"># obtenir Une base LLL r\351duite</Font><Font bold="false">
+MonLLL:=proc(M)
+local N,B,x:
+N:=</Font>cond_1<Font bold="false">(M):
+B:=lovasz(N):
+while not(B[1]) do
+x := N[B[2]]:
+N:=</Font>cond_1<Font bold="false">(subsop(B[2] = N[B[2]+1], B[2]+1 = x, N)):
+B:=lovasz(N):
+end do:
+return N:
+end proc:</Font></Text-field></Input></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">M:=[[4,6,-1,2],[7,-7,2,-1],[9,2,-1,0],[4,3,-1,-3]];
+</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJNRzYiNyY3JiIiJSIiJyEiIiIiIzcmIiIoISIoRitGKjcmIiIqRitGKiIiITcmRigiIiRGKiEiJA==</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">MonLLL(M);</Text-field></Input><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Maple Output" style="2D Output"/></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">M1 := [1,0,0,0,0,0,2050];
+M2 := [0,1,0,0,0,0,1190];
+M3 := [0,0,1,0,0,0,2810];
+M4 := [0,0,0,1,0,0,560];
+M5 := [0,0,0,0,1,0,1120];
+M6 := [0,0,0,0,0,1,1710];
+M7 := [0,0,0,0,0,0,8250];
+
+M := [M1, M2, M3, M4,M5,M6,M7];</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSNNMUc2IjcpIiIiIiIhRihGKEYoRigiJV0/</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSNNMkc2IjcpIiIhIiIiRidGJ0YnRiciJSE+Ig==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSNNM0c2IjcpIiIhRiciIiJGJ0YnRiciJTVH</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSNNNEc2IjcpIiIhRidGJyIiIkYnRiciJGcm</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSNNNUc2IjcpIiIhRidGJ0YnIiIiRiciJT82</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSNNNkc2IjcpIiIhRidGJ0YnRiciIiIiJTU8</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSNNN0c2IjcpIiIhRidGJ0YnRidGJyIlXSMp</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJNRzYiNyk3KSIiIiIiIUYpRilGKUYpIiVdPzcpRilGKEYpRilGKUYpIiUhPiI3KUYpRilGKEYpRilGKSIlNUc3KUYpRilGKUYoRilGKSIkZyY3KUYpRilGKUYpRihGKSIlPzY3KUYpRilGKUYpRilGKCIlNTw3KUYpRilGKUYpRilGKSIlXSMp</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">M2 := Matrix(MonLLL(M));</Text-field></Input><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Warning" style="Warning">Warning, the `with' command does not work inside procedures or modules
+</Text-field></Output><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSNNMkc2Ii1JJ1JUQUJMRUdGJTYlIilfcD5FLUknTUFUUklYR0YlNiM3KTcpIiIhRi9GLyEiIyIiIkYvRi83KSEiIkYvRjNGM0YzRjNGLzcpRjMhIiQiIiNGL0YvRi9GLzcpRjZGNUYvRi9GMEYxRi83KUYxRjBGMEYvRjFGMEYvNylGM0YzRjVGL0YvRjZGLzcpRi9GL0YxRjNGMEYvIiM1SSdNYXRyaXhHNiRJKnByb3RlY3RlZEdGPkkoX3N5c2xpYkdGJQ==</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input"/></Input></Group><Text-field/><Text-field/><Text-field/><RTable handle="26196952" >TTdSMApJNVJUQUJMRV9TQVZFLzI2MTk2OTUyWCwlKWFueXRoaW5nRzYiNiJbZ2whIiUhISEjUiIoIigiIiEhIiJGKCIiIyIiIkYoRidGJ0YnISIkCkYrISIjRihGJ0YnRihGKUYnRixGK0YqRixGKEYnRidGJ0YnRihGKkYoRidGLEYqRidGLEYnRihGJ0YqRixGKUYnRidGJ0YnRidGJ0YnIiMKNUYmCg==</RTable></Worksheet>

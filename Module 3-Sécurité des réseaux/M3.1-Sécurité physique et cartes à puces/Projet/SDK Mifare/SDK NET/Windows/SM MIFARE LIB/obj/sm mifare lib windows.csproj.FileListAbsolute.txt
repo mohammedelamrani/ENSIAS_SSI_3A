@@ -1,0 +1,2 @@
+E:\Project SonMicro\Mifare Software\software\SDK C# NET\Windows\SM MIFARE LIB\obj\Debug\sm mifare lib windows.exe
+E:\Project SonMicro\Mifare Software\software\SDK C# NET\Windows\SM MIFARE LIB\obj\Debug\sm mifare lib windows.pdb

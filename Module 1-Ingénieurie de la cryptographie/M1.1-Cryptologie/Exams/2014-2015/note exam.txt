@@ -1,0 +1,9 @@
+Seulement les notes de cours sont permis et rien d'autre.
+Vous trouverez ci-joint des exercices avec des solutions : 
+sauf les exercices 8 et 9 demandent d'autres notions qu'on a pas fait dans le cours ; le reste est faisable.
+Les grandes lignes de l'examen où des questions relativement aux thèmes suivants vont êtres posées :
+- Malléabilité
+-Thèorème chinois
+- Notion de sécurité ( cpa, cca) ou jeux de sécurité
+-Notion d'IBE
+Bonne préparation."

@@ -1,0 +1,31 @@
+Salam, voilà des éléments de réponse qu'une lauréate m'a envoyée! Allah yjaziha bikhir
+
+SUJET 3 :
+
+1. Variances et covariances des rendements des deux actifs :
+
+Var(T1) = Var(non systématique T1) + Var(systématique T1).
+Var(non systématique T1) = (8%) ²
+Var(systématique T1) = [ beta(T1) * sigma_du_marché ] ²
+
+Var(T2) = Var(non systématique T2) + Var(systématique T2).
+Var(non systématique T2) = (5%) ²
+Var(systématique T2) = [ beta(T2) * sigma_du_marché ] ²
+
+Covariance(T1, T2) = Corrélation(T1, T2) * sigma(T1) * sigma(T2)
+
+2. Béta du portefeuille
+
+Béta(P) = 50% * Béta(T1) + 50% * Béta(T2)
+
+3. La variance totale du portefeuille et son sigma.
+
+Var(P) = Var(non systématique P) + Var(systématique P).
+Var(non systématique P) = (8% * Part(T1)) ² + (5% * Part(T2))², les part étant égales à 50% chacune.
+Var(systématique P) = [ beta(P) * sigma_du_marché ] ² = [ sigma_du_marché ] ² car le béta calculer plus haut est égal à 1.
+
+Sigma(P) c'est juste la racine carrée de sa variance.
+
+Voilà pour les deux dernières questions je ne me retrouve pas mais aussitôt que je me retrouve je vous les enverrai.
+
+Bon courage

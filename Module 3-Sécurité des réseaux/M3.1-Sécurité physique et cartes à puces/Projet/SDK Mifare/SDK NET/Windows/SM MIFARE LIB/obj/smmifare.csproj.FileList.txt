@@ -1,0 +1,8 @@
+bin\Debug\DeviceApplication1.exe
+bin\Debug\DeviceApplication1.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\MainForm.Form1.resources
+obj\Debug\DeviceApplication1.Properties.Resources.resources
+obj\Debug\smmifare.csproj.GenerateResource.Cache
+obj\Debug\DeviceApplication1.exe
+obj\Debug\DeviceApplication1.pdb

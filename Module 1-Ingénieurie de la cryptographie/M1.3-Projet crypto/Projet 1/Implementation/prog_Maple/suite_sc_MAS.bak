@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Worksheet><Version major="6" minor="1"/><View-Properties><Zoom percentage="100"/></View-Properties><Styles><Layout alignment="left" bullet="none" firstindent="0.0" leftmargin="0.0" linebreak="space" linespacing="0.0" name="Normal" rightmargin="0.0" spaceabove="0.0" spacebelow="0.0"/><Layout alignment="centred" bullet="none" linespacing="0.5" name="Maple Output"/><Font background="[0,0,0]" bold="true" executable="true" family="Monospaced" foreground="[255,0,0]" name="Maple Input" opaque="false" size="12"/><Font background="[0,0,0]" family="Times New Roman" foreground="[0,0,255]" name="2D Output" opaque="false" readonly="true" size="12"/></Styles><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">sol_SC := proc (S,m)
+local n,x,r,i;
+n := nops(m);
+x := [seq(0, i = 1 .. n)];
+r := S; 
+i := n;
+while  i &gt;= 1 do
+if r &gt;= m[i] then
+x[i] := 1;
+r := r-m[i];
+else x[i] := 0;
+end if;
+i := i-1;
+end do;
+return x;
+end proc:</Text-field></Input></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">a:={4, 6, 11, 25, 50, 110};
+S:=a[1]+a[2]+a[3]+a[6];</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation style="2D Output">NiM+SSJhRzYiPCgiIiUiIiciIzYiI0QiI10iJDUi</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation style="2D Output">NiM+SSJTRzYiIiRKIg==</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">sol_SC(S,a);</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation style="2D Output">NiM3KCIiIkYkRiQiIiFGJUYk</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">with(numtheory);
+#G_en_eration des cl_es :
+r := [4, 6, 11, 25, 50, 110];
+n := nops(r);
+z := 0:
+for i from 1 to n do
+z := z+r[i];
+end do;
+B := (rand(z .. 2*z))();
+A:=B;
+while gcd(A,B)&gt;1 do
+A:=rand(2..B-1)();
+end do;
+e:=[seq(A*r[i] mod B,i=1..n)];
+</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiM3UUkmR0lnY2RHNiJJKWJpZ29tZWdhR0YlSSZjZnJhY0dGJUkpY2ZyYWNwb2xHRiVJK2N5Y2xvdG9taWNHRiVJKWRpdmlzb3JzR0YlSSlmYWN0b3JFUUdGJUkqZmFjdG9yc2V0R0YlSSdmZXJtYXRHRiVJKWltYWd1bml0R0YlSSZpbmRleEc2JEkqcHJvdGVjdGVkR0YxSShfc3lzbGliR0YlSS9pbnRlZ3JhbF9iYXNpc0dGJUkpaW52Y2ZyYWNHRiVJJ2ludnBoaUdGJUkqaXNzcXJmcmVlR0YlSSdqYWNvYmlHRiVJKmtyb25lY2tlckdGJUknbGFtYmRhR0YlSSlsZWdlbmRyZUdGJUkpbWNvbWJpbmVHRiVJKW1lcnNlbm5lR0YlSShtaWdjZGV4R0YlSSptaW5rb3dza2lHRiVJKG1pcG9seXNHRiVJJW1sb2dHRiVJJ21vYml1c0dGJUkmbXJvb3RHRiVJJm1zcXJ0R0YlSSluZWFyZXN0cEdGJUkqbnRoY29udmVyR0YlSSludGhkZW5vbUdGJUkpbnRobnVtZXJHRiVJJ250aHBvd0dGJUkmb3JkZXJHRjFJKXBkZXhwYW5kR0YlSSRwaGlHRiVJI3BpR0YlSSpwcHJpbXJvb3RHRiVJKXByaW1yb290R0YlSShxdWFkcmVzR0YlSStyb290c3VuaXR5R0YlSSpzYWZlcHJpbWVHRiVJJnNpZ21hR0YlSSpzcTJmYWN0b3JHRiVJKHN1bTJzcXJHRiVJJHRhdUdGJUkldGh1ZUdGJQ==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJyRzYiNygiIiUiIiciIzYiI0QiI10iJDUi</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJuRzYiIiIn</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJ6RzYiIiIl</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJ6RzYiIiM1</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJ6RzYiIiNA</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJ6RzYiIiNZ</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJ6RzYiIiMnKg==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJ6RzYiIiQxIw==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJCRzYiIiQlRw==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJBRzYiIiQlRw==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJBRzYiIiNe</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJlRzYiNygiJC8jIiNBIiR4IyIkUiIiJHkjIiQ5Iw==</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">generation_cles := proc(r)
+local n,z,i,B,A,e;
+n := nops(r);
+z := 0:
+for i from 1 to n do
+z := z+r[i];
+end do;
+B := (rand(z .. 2*z))();
+A:=B;
+while gcd(A,B)&gt;1 do
+A:=rand(2..B-1)();
+end do;
+e:=[seq(A*r[i] mod B,i=1..n)];
+return(B,A,r, e);
+end proc:
+</Text-field></Input><Input><Text-field prompt="&gt; " style="Maple Input"/></Input><Input><Text-field prompt="&gt; " style="Maple Input"/></Input></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">r := [4, 6, 11, 25, 50, 110];</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJyRzYiNygiIiUiIiciIzYiI0QiI10iJDUi</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">r := [4, 6, 11, 25, 50, 110];</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJyRzYiNygiIiUiIiciIzYiI0QiI10iJDUi</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input">generation_cles(r);</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiYiJGsjIiMiKjcoIiIlIiInIiM2IiNEIiNdIiQ1IjcoIiQrIiIjPSIkNCMiJGoiIiNpIiRVIw==</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input"># Chiffrement du message	
+M:=61;
+n:=nops(e);
+a2:=[seq(2^i, i = 0 .. n-1)];
+X :=sol_SC(M,a2);
+S := 0;
+for i from 1 to n do
+S := S+X[i]*e[i];
+end do;</Text-field></Input><Output><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJNRzYiIiNo</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJuRzYiIiIn</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSNhMkc2IjcoIiIiIiIjIiIlIiIpIiM7IiNL</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJYRzYiNygiIiIiIiFGJ0YnRidGJw==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJTRzYiIiIh</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJTRzYiIiQvIw==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJTRzYiIiQvIw==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJTRzYiIiQiWw==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJTRzYiIiQ/Jw==</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJTRzYiIiQpKik=</Equation></Text-field><Text-field layout="Maple Output" style="2D Output"><Equation>NiM+SSJTRzYiIiU3Ng==</Equation></Text-field></Output></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input"/></Input></Group><Group><Input><Text-field layout="Normal" prompt="&gt; " style="Maple Input"/></Input></Group><Text-field/><Text-field/></Worksheet>

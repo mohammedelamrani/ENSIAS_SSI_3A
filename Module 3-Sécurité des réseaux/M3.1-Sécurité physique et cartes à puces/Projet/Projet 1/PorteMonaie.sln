@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PorteMonaie", "PorteMonaie\PorteMonaie.csproj", "{C20D2E14-3D14-4C61-A364-F684E89D169D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sm mifare lib windows", "..\..\..\..\Desktop\RFID_KIT_TP\SDK NET\Windows\SM MIFARE LIB\sm mifare lib windows.csproj", "{FB4BC7D1-43E0-4EA6-8E68-581620AFD6A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D-Authentification", "WindowsFormsApplication1\D-Authentification.csproj", "{32B66753-91EB-4F9F-B4A6-8D391E4C0A29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C20D2E14-3D14-4C61-A364-F684E89D169D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C20D2E14-3D14-4C61-A364-F684E89D169D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C20D2E14-3D14-4C61-A364-F684E89D169D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C20D2E14-3D14-4C61-A364-F684E89D169D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB4BC7D1-43E0-4EA6-8E68-581620AFD6A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB4BC7D1-43E0-4EA6-8E68-581620AFD6A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB4BC7D1-43E0-4EA6-8E68-581620AFD6A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB4BC7D1-43E0-4EA6-8E68-581620AFD6A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32B66753-91EB-4F9F-B4A6-8D391E4C0A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32B66753-91EB-4F9F-B4A6-8D391E4C0A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32B66753-91EB-4F9F-B4A6-8D391E4C0A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32B66753-91EB-4F9F-B4A6-8D391E4C0A29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+elgamal := proc (p, g, ga, m) 
+local k, gma, delta, M;
+ k := (rand(2 .. p-2))();
+ gma := modp(power(g, k), p);
+ M := convert(m, bytes); 
+delta := [seq(modp(M[i]*power(ga, k), p), i = 1 .. nops(M))];
+ return gma, delta ;
+end proc

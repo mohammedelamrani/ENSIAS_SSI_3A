@@ -1,0 +1,80 @@
+fact:=proc(N);
+
+
+local x,y,i;
+i:=0;
+x:=floor(2*sqrt(N)) + i;
+y:=sqrt(x^2 - 4*N);
+
+
+while (issqr(x^2 - 4*N) != true) do
+
+i:=i+1;
+x:=floor(2*sqrt(N)) + i;
+y:=sqrt(x^2 - 4*N);
+
+end do;
+
+i:=i+1;
+x:=floor(2*sqrt(N)) + i;
+y:=sqrt(x^2 - 4*N);
+
+return (x+y)/2,(x-y)/2;
+
+end proc;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local i,x;
+x:=N^1/2;
+i:=1;
+while(x mod N !=0) do
+	x:=x+i;
+	i:=i+1;
+od
+
+return x;
+end proc;
+
+Méthode 2;
+decomp := proc (N) local i, X, Y; i := 0; X := evalf(floor(2*N^(1/2))+i); Y := evalf((X[i]^2-4*N)^(1/2)); while issqr(X[i]^2-4*N) do i := i+1; X := evalf(floor(2*N^(1/2))+i); Y := evalf((X[i]^2-4*N)^(1/2)) end do; i := i+1; X := evalf(floor(2*N^(1/2))+i); Y := evalf((X[i]^2-4*N)^(1/2)); return floor((1/2)*X+(1/2)*Y), floor((1/2)*X-(1/2)*Y), i end proc
+
+
+
+2723692414643965058739202202732108670462559761931426553165854659667882317479940159177112339
+
+
+
+
+On considere le module RSA suivant
+
+N := 2723692414643965058739202202732108670462559761931426553165854659667882317479940159177112339:
+
+On sait que les facteurs premiers p et q de N sont voisins.
+
+1. Ecrire une proc edure pour factoriser N.
+
+2. Factoriser N.
+

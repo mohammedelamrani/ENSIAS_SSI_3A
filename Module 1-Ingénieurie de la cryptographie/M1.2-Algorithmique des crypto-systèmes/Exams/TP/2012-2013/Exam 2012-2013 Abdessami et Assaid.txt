@@ -1,0 +1,63 @@
+Exercice 1:
+1)
+
+lucas:=proc(a,b)
+
+local L,i,p,A,B,j;
+
+L:={};
+
+for i from a to b do
+	p:=nextprime(i);
+	if p<=b then
+		A:=4;
+		B:=2^p - 1;
+
+		for j from 1 to  p-2 do
+		A:= (A^2 - 2) mod B;
+		end do;
+	
+		if A = 0 then
+		L:= L union {p};
+		end if;
+	end if;
+end do;
+
+return L;
+
+end proc;
+
+2)
+> lucas(1, 1000);
+            {3, 5, 7, 13, 17, 19, 31, 61, 89, 107, 127, 521, 607}
+
+
+Exercice 3:
+
+1) Procédure Maple:
+
+
+local  m1,m2,p2,q1,r,a,p1,p;
+m1:=2^230;
+m2:=2^(230+20);
+p2:=nextprime(rand(m1..m2)());
+q1:=nextprime(rand(m1..m2)());
+r:=-1/p2  mod  q1;
+a:=1;
+p1:=4*a*p2*q1+4*r*p2+3;
+p:=2*p1+1;
+while  not(isprime(p1))  or  not(isprime(p))  do
+a:=a+1;
+p1:=4*a*p2*q1+4*r*p2+3;
+p:=2*p1+1;
+od;
+print (p,length(convert(p,binary)));
+
+
+2) 
+p=139726258127185868631577222880722512602552546298054943065520801008868406113606893723547999748283302892335066521592426080744463001750531538830990190678846439 
+
+3) Longueur de p (en binaire)= 516
+
+Exercice 2:
+

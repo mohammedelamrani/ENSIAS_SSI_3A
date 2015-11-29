@@ -1,0 +1,30 @@
+algofact:=proc(N);
+local c,t,x1,x2,m1,m2,p,q,n,k,x,y,s,L;
+
+
+
+Digits  :=  100:
+//t  :=  100:
+//x1  :=  round(2.0^((1/2)*t)):
+//x2  :=  round(2.0^((t+1)*(1/2))):
+
+m1  :=  (rand(x1..x2))():
+p   :=  nextprime(m1):
+m2 :=  round(p+10*2^(t/4)):
+q  :=  nextprime(m2):
+N  :=  p*q:
+c  :=  trunc(abs(p-q)/N^0.25)+1:
+n  :=  round(2*sqrt(N)):
+k  :=  0:
+while  k  <  (1/2)*c^2+1  do
+x  :=  n+k:
+y  :=  round(sqrt(x^2-4*N)):
+s  :=  round((x+y)/2):
+if  gcd(s,N)  >  1  then
+print(’Un  facteur  est’,  s):
+break:
+end  if:
+k  :=  k+1:
+end  do:
+
+end proc;

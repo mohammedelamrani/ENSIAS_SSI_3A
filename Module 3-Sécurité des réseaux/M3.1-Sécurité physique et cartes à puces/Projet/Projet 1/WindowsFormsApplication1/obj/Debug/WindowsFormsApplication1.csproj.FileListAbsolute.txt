@@ -1,0 +1,9 @@
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\WindowsFormsApplication1\obj\Debug\MainForm.Form2.resources
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\WindowsFormsApplication1\obj\Debug\MainForm2.Properties.Resources.resources
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Tchiwak\Documents\Visual Studio 2012\Projects\PorteMonaie\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache

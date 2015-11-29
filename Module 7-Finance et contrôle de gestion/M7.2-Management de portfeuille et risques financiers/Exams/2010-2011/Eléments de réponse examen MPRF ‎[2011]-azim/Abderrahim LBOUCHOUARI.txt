@@ -1,0 +1,15 @@
+Salam 3alaykom tout le monde 
+
+tout d'abord j'aimerai bien vous remercier tous pour vous efforts pour s'aider les uns les autres.
+pour le corrigé j'ai des petites remarques que je propose sans être sure si c'est les bonnes réponses ou pas !
+pour le QCM, la question 4 je crois que la bonne réponse c'est B et pas C, car l'achat d'une action implique l’acquisition d'une part du capitale et pas forcement un gagne à la fin de l'année, et c'est ce qui distingue l'action de l’obligation.  
+pour la première partie 
+la question a propos de portefeuille efficace/ non-efficace: on n'est pas obligé de Dessiner les points dans un graphe, une simple analyse de P(ri) et des segma(ri), va faire l'affaire.
+non-efficace : le P3 puisque il a le même rondement que P1 avec plus de risque.
+portefeuille efficace : P4 qui a le plus petit risque avec le rondement le plus grande 
+(ici j'ai supposé que tous les calcules numériques sont correctes, sauf pour segma(2) je crois que c'est 1,29% et pas 12,9% car c plus logique vu les autres segmas).
+finalement pour le portefeuille à zéro risque, je me souviens que le prof a dit que c un PE car nous sommes sure de gagner puis le risque est nul.  
+
+NB: c'est des réponses personnelles -> grandes marge d'erreurs 
+
+cordialement 
