@@ -61,9 +61,9 @@ NB: certains rapports, projets ou slides sont le fruit du travail d'anciens él�
 
 ##Contact
 
-* Twitter: @NajihY
-* Mail: ensias.ssi16@gmail.com
-* Github: https://github.com/najihyaakoub
+Twitter: @NajihY
+Mail: ensias.ssi16@gmail.com
+Github: https://github.com/najihyaakoub
 
 
     École Nationale Supérieure d'Informatique et d'Analyse des Systèmes
