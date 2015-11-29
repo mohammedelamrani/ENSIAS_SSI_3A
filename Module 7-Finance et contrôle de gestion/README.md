@@ -5,3 +5,4 @@ Responsable: M.El Manouar
 ##Eléments de module:
 	-> Contrôle de gestion et audit stratégique.
 	-> Management de portefeuille et risques financiers.
+	-> Gestion ds profils et des compétences.

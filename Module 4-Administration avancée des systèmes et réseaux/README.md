@@ -4,5 +4,5 @@ Responsable: M.El Koutbi
 
 ##Eléments de module:
 	-> Administration avancée de Windows.
-	-> Administration avancée d’Unix.
+	-> Administration avancée de Linux.
 	-> Administration des réseaux.
